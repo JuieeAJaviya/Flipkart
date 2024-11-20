@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Flipkart </title>
+</head>
+<body>
+  
+  <header>
+    <h1>Flipkart </h1>
+    <input type="text" id="search" placeholder="Search products..." />
+  </header>
+
+  
+  <aside class="filters">
+    <h2>Filters</h2>
+    <label><input type="checkbox" class="filter" value="category1"> Electronics</label>
+    <label><input type="checkbox" class="filter" value="category2"> Fashion</label>
+    <h2>Sort By</h2>
+    <select id="sort">
+      <option value="name-asc">Name: A to Z</option>
+      <option value="name-desc">Name: Z to A</option>
+    </select>
+  </aside>
+
+  
+  <main>
+    <section class="product-list" id="product-list">
+      
+      <div class="product" data-name="Smartphone" data-category="category1">
+        <img src="mobile.jfif" alt="Smartphone">
+        <h3>Smartphone</h3>
+        <p class="price">$699</p>
+      </div>
+      <div class="product" data-name="Sneakers" data-category="category2">
+        <img src="fashion.jfif" alt="Sneakers">
+        <h3>Sneakers</h3>
+        <p class="price">$99</p>
+      </div>
+      <div class="product" data-name="Laptop" data-category="category1">
+        <img src="aplliances.jfif" alt="Laptop">
+        <h3>Laptop</h3>
+        <p class="price">$1299</p>
+      </div>
+    </section>
+  </main>
+
+
+  <div id="pdp-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="pdp-details"></div>
+    </div>
+  </div>
+
+  
+</body>
+</html>
